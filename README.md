@@ -4,7 +4,6 @@ This project implements a Convolutional Neural Network (CNN) for classifying ima
 
 ## Table of Contents
 
-- [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Training](#training)
@@ -12,24 +11,6 @@ This project implements a Convolutional Neural Network (CNN) for classifying ima
 - [Results](#results)
 - [License](#license)
 
-## Installation
-
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/kpta119/Convolutional-neural-network-CIFAR100.git
-    cd Convolutional-neural-network-CIFAR100
-    ```
-
-2. Create a virtual environment and activate it:
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3. Install the required dependencies:
-    ```sh
-    pip install -r requirements.txt
-    ```
 
 ## Usage
 
@@ -44,16 +25,12 @@ This project implements a Convolutional Neural Network (CNN) for classifying ima
     ```
 
 ## Project Structure
-. ├── data │ └── cifar-100-python │ └── test ├── model_conv5.py ├── cifar_dataloader.py ├── train_epoch.py ├── eval.py ├── script.py ├── requirements.txt └── README.md
 
-
-- [test](http://_vscodecontentref_/3): Contains the CIFAR-100 test dataset.
 - [model_conv5.py](http://_vscodecontentref_/4): Defines the CNN model architecture.
 - [cifar_dataloader.py](http://_vscodecontentref_/5): Handles data loading and transformations.
 - [train_epoch.py](http://_vscodecontentref_/6): Contains the training loop for one epoch.
 - [eval.py](http://_vscodecontentref_/7): Contains the evaluation logic for the model.
 - [script.py](http://_vscodecontentref_/8): Main script for training and evaluating the model.
-- `requirements.txt`: Lists the required Python packages.
 - [README.md](http://_vscodecontentref_/9): Project documentation.
 
 ## Training
