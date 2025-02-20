@@ -31,7 +31,7 @@ train_size = int(0.8 * len(trainset))
 val_size = len(trainset) - train_size
 trainset, valset = torch.utils.data.random_split(trainset, [train_size, val_size])
 
-b_testloader = torch.utils.data.DataLoader(
+testloader = torch.utils.data.DataLoader(
     testset, batch_size=batch_size, shuffle=False, num_workers=0
 )
 
