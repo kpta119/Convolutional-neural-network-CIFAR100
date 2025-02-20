@@ -19,23 +19,23 @@ This project implements a Convolutional Neural Network (CNN) for classifying ima
     python script.py
     ```
 
-2. To evaluate the model, ensure the [load](http://_vscodecontentref_/1) variable is set to `True` in [script.py](http://_vscodecontentref_/2) and run:
+2. To evaluate the model, ensure the `load` variable is set to `True` in [script.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/script.py) and `epochs` variable is set to `0` in order to only evaluate model and run:
     ```sh
     python script.py
     ```
 
 ## Project Structure
 
-- [model_conv5.py](http://_vscodecontentref_/4): Defines the CNN model architecture.
-- [cifar_dataloader.py](http://_vscodecontentref_/5): Handles data loading and transformations.
-- [train_epoch.py](http://_vscodecontentref_/6): Contains the training loop for one epoch.
-- [eval.py](http://_vscodecontentref_/7): Contains the evaluation logic for the model.
-- [script.py](http://_vscodecontentref_/8): Main script for training and evaluating the model.
-- [README.md](http://_vscodecontentref_/9): Project documentation.
+- [model_conv5.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/model_conv5.py): Defines the CNN model architecture.
+- [cifar_dataloader.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/cifar_dataloader.py): Handles data loading and transformations.
+- [train_epoch.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/train_epoch.py): Contains the training loop for one epoch.
+- [eval.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/eval.py): Contains the evaluation logic for the model.
+- [script.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/script.py): Main script for training and evaluating the model.
+- [README.md](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/README.md): Project documentation.
 
 ## Training
 
-To train the model, ensure the [load](http://_vscodecontentref_/10) variable is set to `False` in [script.py](http://_vscodecontentref_/11). The training process includes:
+To train the model, ensure the `save` variable is set to `Ture` in [script.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/script.py) to save the model to file after training. The training process includes:
 
 - Loading the CIFAR-100 dataset.
 - Defining the CNN model architecture.
@@ -44,7 +44,7 @@ To train the model, ensure the [load](http://_vscodecontentref_/10) variable is 
 
 ## Evaluation
 
-To evaluate the model, ensure the [load](http://_vscodecontentref_/12) variable is set to `True` in [script.py](http://_vscodecontentref_/13). The evaluation process includes:
+To evaluate the model, ensure the `load` variable is set to `True` in [script.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/script.py). The evaluation process includes:
 
 - Loading the trained model from a file.
 - Evaluating the model on the CIFAR-100 test dataset.
