@@ -19,7 +19,7 @@ This project implements a Convolutional Neural Network (CNN) for classifying ima
     python script.py
     ```
 
-2. To evaluate the model, ensure the `load` variable is set to `True` in [script.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/script.py) and `epochs` variable is set to `0` in order to only evaluate model and run:
+2. To evaluate the model, ensure the `load` variable is set to `True` (if you want to evaluate written model to file) in [script.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/script.py) and `epochs` variable is set to `0` in order to only evaluate model and run:
     ```sh
     python script.py
     ```
