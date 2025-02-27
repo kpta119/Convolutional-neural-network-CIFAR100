@@ -26,6 +26,7 @@ This project implements a Convolutional Neural Network (CNN) for classifying ima
 
 ## Project Structure
 
+- [Score models.pdf](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/Score%20models.pdf): shows results and metrics for top models
 - [model_conv5.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/model_conv5.py): Defines the CNN model architecture.
 - [cifar_dataloader.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/cifar_dataloader.py): Handles data loading and transformations.
 - [train_epoch.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/train_epoch.py): Contains the training loop for one epoch.
