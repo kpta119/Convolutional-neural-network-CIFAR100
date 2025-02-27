@@ -7,15 +7,18 @@ from backbone_dataloader import testloader as b_testloader
 from backbone_dataloader import trainloader as b_trainloader
 from backbone_dataloader import val_loader as b_val_loader
 from eval import eval
+from dataclasses import dataclass
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-path = "conv5_3v2.pth"  #path to saved model
-resnet_path = "resnet18v1.pth"  #path to saved resnet model
-criterion = nn.CrossEntropyLoss()
+@dataclass
+class Config:
+    path: str= "conv5_3v2.pth"  #path to saved model
+    resnet_path: str = "resnet18v1.pth"  #path to saved resnet model
+    criterion: nn.Module = nn.CrossEntropyLoss()
 
-def main():
-    my_conv_model = torch.load(path)
+def main(config: Config):
+    my_conv_model = torch.load(config.path)
     my_conv_model.to(device)
     my_conv_model.eval()
 
@@ -28,7 +31,7 @@ def main():
         nn.ReLU(),
         nn.Linear(256, 100),
     )
-    resnet18.load_state_dict(torch.load(resnet_path))
+    resnet18.load_state_dict(torch.load(config.resnet_path))
     resnet18.to(device)
 
     models_dict = {
@@ -38,7 +41,7 @@ def main():
 
     accuracies = {}
     for name, net in models_dict.items():
-        loss, metrics = eval(net[0], criterion, net[1], device)
+        loss, metrics = eval(net[0], config.criterion, net[1], device)
         acc = metrics["accuracy"]
         acc = acc * 100
         accuracies[name] = acc
@@ -56,5 +59,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    config = Config()
+    main(config)
 
