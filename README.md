@@ -19,7 +19,7 @@ This project implements a Convolutional Neural Network (CNN) for classifying ima
     python script.py
     ```
 
-2. To evaluate the model, ensure the `load` variable is set to `True` (if you want to evaluate written model to file) in [script.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/script.py) and `epochs` variable is set to `0` in order to only evaluate model and run:
+2. To evaluate the model, ensure the `load` variable is set to `True` (if you want to evaluate written model in file) in [script.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/script.py) and `epochs` variable is set to `0` in order to only evaluate model and run:
     ```sh
     python script.py
     ```
@@ -44,7 +44,7 @@ To train the model, ensure the `save` variable is set to `Ture` in [script.py](h
 
 ## Evaluation
 
-To evaluate the model, ensure the `load` variable is set to `True` in [script.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/script.py). The evaluation process includes:
+To evaluate the model, ensure the `load` variable is set to `True` (if you want to evaluate written model in file) in [script.py](https://github.com/kpta119/Convolutional-neural-network-CIFAR100/blob/master/script.py). The evaluation process includes:
 
 - Loading the trained model from a file.
 - Evaluating the model on the CIFAR-100 test dataset.
@@ -53,7 +53,7 @@ To evaluate the model, ensure the `load` variable is set to `True` in [script.py
 
 ## Results
 
-The results of the model evaluation, including confusion matrices and performance metrics, will be displayed and saved as images.
+The results of the model evaluation, including confusion matrices and performance metrics, will be displayed and saved as images. Matrixes for the best trained model are shown in confusion_matrixes_1st_model folder.
 
 ## License
 
